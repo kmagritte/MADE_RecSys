@@ -3,6 +3,7 @@ sim/out/
 __pycache__
 botify/log/*
 .DS_Store
+.venv
 
 # LaTeX
 *.aux
