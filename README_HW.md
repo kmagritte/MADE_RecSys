@@ -15,9 +15,11 @@ pip install -r requirements.txt
  - Итоговый файл с рекомендациями: `botify/data/tracks_hw.json`
 
 Для формирование топа треков для каждого из рекомендеров: 
-- Запустить ноутбук `HomeWork.ipynb` (1 раздел)
-- Предварительно [скачать данные](https://drive.google.com/drive/folders/1X1DhKjMuDXNQCd8bYmroBwt9mNePhaRB?usp=share_link) и разместить в каталоге `botify/data/data_all_recommenders`   
+- Запустить ноутбук `HomeWork.ipynb` (1 раздел)  
 *Примечание:* Там же отображены все проведенные A/B эксперименты (2-3 раздел).
+- Предварительно [скачать данные](https://drive.google.com/drive/folders/1X1DhKjMuDXNQCd8bYmroBwt9mNePhaRB?usp=share_link) и разместить в каталоге `botify/data/data_all_recommenders`  
+- Полученные коллекции треков: `botify/data/data_top_tracks`
+
 
 Запуск сервиса и проведение итогового A/B эксперимента (аналогично семинарам):
 1. Запустить сервис botify (`botify/README.md`)
