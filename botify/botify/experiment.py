@@ -9,12 +9,14 @@ class Treatment(Enum):
     T2 = 2
     T3 = 3
     T4 = 4
+    T5 = 5
 
 
 class Split(Enum):
     HALF_HALF = 2
     FOUR_WAY = 4
     FIVE_WAY = 5
+    SIX_WAY = 6
 
 
 class Experiment:
@@ -62,5 +64,11 @@ class Experiments:
     PERSONALIZED = Experiment("PERSONALIZED", Split.HALF_HALF)
     CONTEXTUAL = Experiment("CONTEXTUAL", Split.HALF_HALF)
 
+    # My experiments
+    ALL_RECOMMENDERS = Experiment("ALL_RECOMMENDERS", Split.FIVE_WAY)
+    TOP_TRACKS_RECOMMENDERS = Experiment("TOP_TRACKS_RECOMMENDERS", Split.SIX_WAY)
+    CONTEXTUAL_TOPPOP = Experiment("CONTEXTUAL_TOPPOP", Split.HALF_HALF)
+    
+
     def __init__(self):
-        self.experiments = [Experiments.CONTEXTUAL]
+        self.experiments = [Experiments.CONTEXTUAL_TOPPOP]
